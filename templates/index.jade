@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  each article in articles
+    article.post
+      h2.index-post-title
+        a(href=article.url+'index.html')= article.title	  
+      p.date
+        span= moment.utc(article.date).format('DD MMMM YYYY')
+      section.intro-content!= article.intro
+      if article.hasMore
+        a(href=article.url).more More
+  if prevPage
+    a(href=prevPage.url) « Newer Entries
+  if nextPage
+    a(href=nextPage.url) Older Entries »

@@ -1,0 +1,29 @@
+{
+  "locals": {
+    "url": "http://knownknown.github.io",
+    "name": "near-perfect clarity",
+    "owner": "Author",
+    "description": "there will be near-perfect clarity"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+	"wintersmith-stylus"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 10
+  },
+  "port": 8000,
+  "output": "C:/Users/sgusev/Documents/GitHub/knownknown.github.io"
+}

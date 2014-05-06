@@ -1,0 +1,21 @@
+extends layout
+
+title
+
+block content
+  - var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
+  -	 return item.date.getFullYear()
+  - }).value()
+
+  section.archive
+    h2 Index
+    - var years = _.chain(archives).keys().value()
+    each year in years
+      h3.year= year
+      ul
+        - var posts = archives[year].reverse()
+        each post in posts
+          li
+            a(href=post.url+'index.html')
+              span.archive-post-title= post.title
+              span.archive-date= moment.utc(post.date).format('MM/DD')

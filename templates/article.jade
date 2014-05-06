@@ -1,0 +1,9 @@
+extends layout
+
+block prepend title
+  | #{ page.title } &mdash; 
+
+block content
+  article.post
+    h1.post-title= page.title
+    section.content!= page.html

@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Alegreya:400italic,400')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Alegreya+SC')
+  body
+    div.container
+      header
+        img(src=locals.url+'/globe.png')
+        p
+        a.blog-title(href=locals.url+'/index.html')= locals.name
+      block content
+    div.footer-container
+      div.container
+        footer
+          ul
+            li
+              a(href='/index.html') Home
+            li
+              a(href='/about.html') About
+            li
+              a(href='/archive.html') Index
+          p.copyright &copy;#{ new Date().getFullYear() } #{ locals.owner }
