@@ -1,5 +1,5 @@
 ---
-title: A Brief Note on Sentiment
+title: Wikileaks 2 - A Brief Note on Sentiment
 author: author
 date: 2014-04-23
 template: article.jade
@@ -10,6 +10,8 @@ template: article.jade
 <span class="more">
 
 **Introduction**
+
+*This post is part #2 in an ongoing series describing data analyses of the Wikileaks cables.*
 
 One of the more exciting NLP applications to this data is "sentiment" analysis, which aims to automatically classify sentences and entities with the writer's contextual emotions. Naively, one could this by simply taking a set of words with known sentiment scores ("happy"=positive, "awful"=negative, etc.) and counting up their occurrences to get an overall sentence or document score (the so-called _bag of words_ model which ignores word order and grammar). This has some obvious draw-backs ("he was happy to spit in our face", "we had an awfully good time") and has been heavily extended to take into account local and even multi-sentence context. The Stanford [Recursive Model](http://nlp.stanford.edu/sentiment/), for example, turns the sentence into a tree using parts-of-speech, then builds a combined score from the leaves up. Perhaps "awfully good" could be correctly understood as single positive phrase instead of one positive word and one negative word. If the algorithm works, the implications can be tantalizing; see, for example, the IKANOW [analysis](http://www.ikanow.com/making-the-most-of-sentiment-scores-with-ikanow-and-r/) of Enron e-mails; and Saif Mohammad's time-series [analysis](http://www.saifmohammad.com/WebDocs/NRC-TechReport-emotions-in-books-and-mail.pdf) of sentiment in books. In the context of diplomatic data, quantifying sentiment would express in numbers the cloud of emotions surrounding those actors and organizations we're studying:
 

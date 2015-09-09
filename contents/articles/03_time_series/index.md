@@ -1,5 +1,5 @@
 ---
-title: Time Series
+title: Wikileaks 3 - Time Series
 author: author
 date: 2014-04-29
 template: article.jade
@@ -8,6 +8,8 @@ template: article.jade
 *Examining the distribution of cables and entities over time provides important context and identifies a small number of well-documented entities that are likely to be important. However, we're still not capturing the direct relationships between these entities.*
 
 <span class="more">
+
+*This post is part #3 in an ongoing series describing data analyses of the Wikileaks cables.*
 
 In the previous post, a naive list of highly occurring entities provided some sense of the diversity of this data as well as a condensed "Top 10" of the people, locations, and organizations discussed in the cables. One dimension that's entirely missing from that approach is that of time. Each cable has been coded with a time-stamp for when it was sent, allowing us to look at the frequency of communication across the available time-frame. To get a birds eye view of all cables, I've plotted their number over consecutive 10-day periods, with the year breaks indicated:
 

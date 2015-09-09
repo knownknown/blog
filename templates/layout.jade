@@ -14,9 +14,9 @@ html(lang='en')
   body
     div.container
       header
-        img(src=locals.url+'/globe.png')
+        img(src='/globe.png')
         p
-        a.blog-title(href=locals.url+'/index.html')= locals.name
+        a.blog-title(href='/index.html')= locals.name
       block content
     div.footer-container
       div.container

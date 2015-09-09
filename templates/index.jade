@@ -9,7 +9,7 @@ block content
         span= moment.utc(article.date).format('DD MMMM YYYY')
       section.intro-content!= article.intro
       if article.hasMore
-        a(href=article.url).more More
+        a(href=article.url).more » read
   if prevPage
     a(href=prevPage.url) « Newer Entries
   if nextPage

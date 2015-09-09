@@ -1,5 +1,5 @@
 ---
-title: Getting Started - Named Entities
+title: WikiLeaks 1 - Named Entities
 author: author
 date: 2014-04-22
 template: article.jade
@@ -10,6 +10,8 @@ template: article.jade
 <span class="more">
 
 **Introduction**
+
+*This post is part #1 in an ongoing series describing data analyses of the Wikileaks cables.*
 
 The entire Cablegate release consists of over 250,000 cables from a 20 year period, over a gigabyte of full-text storage. To get a sense of the data, these initial analyses will focus on the 8,000 cables tagged "RS", corresponding to communication about Russia and neighbouring countries. Russia was chosen for several reasons:
 
