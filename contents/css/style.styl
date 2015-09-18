@@ -93,7 +93,7 @@ ul, ol, pre
 h1, h2, h3, h4, h5, h6
   font-weight normal
   font-style italic
-  text-align left
+  text-align center
   margin ($s1 rem) 50px ($s1 rem) 50px
   max-width 800px
   line-height $s4 rem
@@ -193,7 +193,7 @@ header, footer
   text-align center
 
 header
-  margin ($s6 rem) 0
+  margin ($s3 rem) 0
 
 .blog-title
   color $red
@@ -212,17 +212,18 @@ footer ul, footer ul li
 
 .footer-container
   background $whiteishgray
-  padding ($s4 rem) 0
-  margin-top ($s8 rem)
+  padding ($s2 rem) 0
+  margin-top ($s2 rem)
 
-.copyright
+p.copyright
   color $gray
-  margin-top ($sn3 rem)
+  margin ($sn3 rem) auto
+  text-align center
 
 // posts
 .post
   margin 0
-  padding-bottom ($s5 rem)
+  padding-bottom ($s3 rem)
   text-align justify
 
 .post p a
@@ -235,12 +236,13 @@ footer ul, footer ul li
 
 .index-post-title
   margin-top ($sn3 rem)
+  text-align: center
   
 // meta
 .date, .author, .date a, .author a
   make-small-caps()
 
-.date
+p.date
   text-align center
   margin-bottom 0
   color $gray
@@ -260,8 +262,7 @@ footer ul, footer ul li
   color inherit
   text-decoration none
   border-bottom 1px dotted $red
-  float right
-  margin-top -20px
+  display none
 
 // ARCHIVE STYLES
 
