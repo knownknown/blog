@@ -1,5 +1,5 @@
 ---
-title: WikiLeaks 0 -  Introduction
+title: WL0 - Introduction
 author: author
 date: 2014-04-21
 template: article.jade

@@ -1,5 +1,5 @@
 ---
-title: Wikileaks 3 - Time Series
+title: WL3 - Time Series
 author: author
 date: 2014-04-29
 template: article.jade

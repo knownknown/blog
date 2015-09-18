@@ -23,8 +23,8 @@ $font-size-large = 118% // ideal measure of ~64 characters
 $font-size-small = 100%
 
 // container sizes
-$container-width-large = 800px
-$container-width-small = 480px
+$container-width-large = 900px
+$container-width-small = 800px
 
 // sizes based on 35 stranded scale
 $sn3 = 0.4615
@@ -63,7 +63,7 @@ body
   text-rendering optimizeLegibility
   font-family $serif
   font-size $s1 rem
-  line-height $s3 rem
+  line-height $s2 rem
   font-weight 400
   color $blackish
   background $whiteish
@@ -74,6 +74,12 @@ body
   padding 0
   word-break hyphenate
   word-wrap break-word
+
+.container p,
+.container ul
+  margin ($s0 em) auto
+  text-align justify
+  max-width $container-width-small
 
 // links and typography
 a
@@ -87,8 +93,9 @@ ul, ol, pre
 h1, h2, h3, h4, h5, h6
   font-weight normal
   font-style italic
-  text-align center
-  margin ($s1 rem) 0
+  text-align left
+  margin ($s1 rem) 50px ($s1 rem) 50px
+  max-width 800px
   line-height $s4 rem
   a
     text-decoration none
@@ -98,6 +105,7 @@ h1, h2, h3, h4, h5, h6
       text-decoration none
 h1
   font-size ($s4 rem)
+  text-align: center;
 
 h2
   font-size ($s3 rem)
@@ -137,8 +145,6 @@ code
   font-family $mono
   font-size ($sn1 em)
   color $blackish
-p
-  clear both
   
 // images
 img
@@ -149,6 +155,36 @@ p img
   display block
   max-width 100%
   border-bottom 1px solid #ccc  
+
+figcaption 
+  border 1px solid #ddd
+  font-size ($sn1 em)
+  text-align center
+  display table-caption
+  caption-side bottom
+  clear both
+  line-height ($s2 em)
+  padding ($sn1 em)
+  margin 0
+
+figure.full
+  float none
+  background #eee
+  border 1px solid #ddd
+  margin 1rem auto
+  display table
+
+figure.left
+  float left
+  border 1px solid #ddd
+  margin 1rem 1rem 1rem 0
+  display table
+
+figure.right
+  float right
+  border 1px solid #ddd
+  margin 1rem 0 1rem 1rem
+  display table
 
 // SECTION STYLES
 

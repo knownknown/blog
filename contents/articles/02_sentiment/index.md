@@ -1,5 +1,5 @@
 ---
-title: Wikileaks 2 - A Brief Note on Sentiment
+title: WL2 - A Brief Note on Sentiment
 author: author
 date: 2014-04-23
 template: article.jade

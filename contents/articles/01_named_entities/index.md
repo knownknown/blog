@@ -1,5 +1,5 @@
 ---
-title: WikiLeaks 1 - Named Entities
+title: WL1 - Named Entities
 author: author
 date: 2014-04-22
 template: article.jade

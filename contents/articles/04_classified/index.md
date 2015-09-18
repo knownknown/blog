@@ -1,5 +1,5 @@
 ---
-title: Wikileaks 4 - Classified status
+title: WL4 - Classified status
 author: author
 date: 2014-05-01
 template: article.jade
